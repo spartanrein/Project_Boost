@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4367287048787934, guid: d841fdc344218da4eb1a868f5cd2fd6b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4367287048787934, guid: d841fdc344218da4eb1a868f5cd2fd6b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -206,31 +206,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.24124537
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.43
+      value: 21.052874
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -28.29
+      value: -31.69062
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.019583443
+      value: -0.22456829
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.0014613961
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0003368303
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9998082
+      value: -0.9744572
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_RootOrder
@@ -238,7 +238,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4876032119681778, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.2440002
+      value: 1.1910001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e70bd4e17dfd4349a27b26214ec3454, type: 2}
@@ -327,21 +327,6 @@ Prefab:
     - target: {fileID: 1996458877623344, guid: 6fde9ccaab5641042977bc7a78678ef7, type: 2}
       propertyPath: m_Name
       value: Rocket Ship
-      objectReference: {fileID: 0}
-    - target: {fileID: 114079152711736312, guid: 6fde9ccaab5641042977bc7a78678ef7,
-        type: 2}
-      propertyPath: mainThrust
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 54780143169769206, guid: 6fde9ccaab5641042977bc7a78678ef7,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114079152711736312, guid: 6fde9ccaab5641042977bc7a78678ef7,
-        type: 2}
-      propertyPath: rcsThrust
-      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fde9ccaab5641042977bc7a78678ef7, type: 2}
