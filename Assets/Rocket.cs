@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour {
 
+    [SerializeField] float rcsThrust = 100f;
+    [SerializeField] float mainThrust = 100f;
     new Rigidbody rigidbody;
     AudioSource rocketSound;
 
@@ -27,7 +29,7 @@ public class Rocket : MonoBehaviour {
         if (keySpacePressed)
         {
             print("Space pressed");
-            rigidbody.AddRelativeForce(Vector3.up);
+            rigidbody.AddRelativeForce(Vector3.up * mainThrust);
             if (!rocketSound.isPlaying)
             {
                 rocketSound.Play();
@@ -44,15 +46,21 @@ public class Rocket : MonoBehaviour {
         bool keyAPressed = Input.GetKey(KeyCode.A);
         bool keyDPressed = Input.GetKey(KeyCode.D);
 
+        rigidbody.freezeRotation = true;
+
+        float rotationThisFrame = rcsThrust * Time.deltaTime;
+
         if (keyAPressed)
         {
             print("A is pressed");
-            transform.Rotate(Vector3.forward);
+            transform.Rotate(Vector3.forward * rotationThisFrame);
         }
         else if (keyDPressed)
         {
             print("D is pressed");
-            transform.Rotate(-Vector3.forward);
+            transform.Rotate(-Vector3.forward * rotationThisFrame);
         }
+
+        rigidbody.freezeRotation = false;
     }
 }
