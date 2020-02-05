@@ -7,7 +7,6 @@ public class Rocket : MonoBehaviour {
 
     new Rigidbody rigidbody;
     AudioSource rocketSound;
-    bool playRocketSound;
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +16,13 @@ public class Rocket : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        ProcessInput();
+        Thrust();
+        Rotate();
 	}
 
-    private void ProcessInput()
+    private void Thrust()
     {
-        bool keyAPressed = Input.GetKey(KeyCode.A);
-        bool keyDPressed = Input.GetKey(KeyCode.D);
-        bool keySpacePressed = Input.GetKey(KeyCode.L);
+        bool keySpacePressed = Input.GetKey(KeyCode.Space);
 
         if (keySpacePressed)
         {
@@ -39,6 +37,13 @@ public class Rocket : MonoBehaviour {
         {
             rocketSound.Stop();
         }
+    }
+
+    private void Rotate()
+    {
+        bool keyAPressed = Input.GetKey(KeyCode.A);
+        bool keyDPressed = Input.GetKey(KeyCode.D);
+
         if (keyAPressed)
         {
             print("A is pressed");
